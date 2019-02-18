@@ -23,7 +23,6 @@ class fileConnector:
         self.file_behaviour = file_behaviour
 
     def file_return(self):
-        # file_object = open(self.file_name, self.file_behaviour)
         with open(self.file_name, self.file_behaviour) as f:
             my_file = f.readlines()
         return my_file
